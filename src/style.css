@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* makes the page scroll to specific section in a smooth manor. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* makes all p elements a grey color. */
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+a, 
+.btn {
+    transition: all 300ms ease;
+}
+
+/* display flex arranges the links in a horizontal format, block is verticle. */
+nav,
+.nav-links {
+    
+    display: flex;
+    
+   
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+     /* vh stands for view height */
+     height: 14vh;
+}
+
+.nav-links {
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    /* puts an underline the links */
+    text-decoration: underline;
+    /* creates the spacing between the words and underline */
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.dimloons-logo {
+    font-size: 1.5rem;
+}
+
+.dimloons-logo:hover {
+    cursor: default;
+}
+
+/* Hamburger menu */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+}
